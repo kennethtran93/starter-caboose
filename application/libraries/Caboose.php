@@ -44,6 +44,11 @@ class Caboose {
 			'css' => 'jRating.jquery.css',
 			'js' => 'jRating.jquery.js',
 			'template' => 'jrating'
+		),
+		'jrate' => array(
+			'css' => '',
+			'js' => 'jRate.js',
+			'template' => 'jrate'
 		)
      );
     // provide for any fields they need. this should be indexed [component][field]
