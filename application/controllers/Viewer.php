@@ -38,27 +38,6 @@ class Viewer extends Application {
 
 		$this->render();
 	}
-
-	// Handle Rating
-	function rate()
-	{
-		// detect non-AJAX entry
-		if (!isset($_POST['action']))
-			redirect("/");
-		// extract parameters
-		$id = intval($_POST['idBox']);
-		$rate = intval($_POST['rate']);
-		// update posting
-		$record = $this->quotes->get($id);
-		if ($record != null)
-		{
-			$record->vote_total += $rate;
-			$record->vote_count++;
-			$this->quotes->update($record);
-		}
-		$response = "Thanks for voting!";
-		echo json_encode($response);
-	}
 	
 	// Handle Rating
 	function rate() {
