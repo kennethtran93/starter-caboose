@@ -1,7 +1,5 @@
 ### ACIT 4850 Lab 05 Webapp - Caboose
 
-
-
 ### Project Folders
 
 Folder | Description
@@ -11,6 +9,15 @@ Folder | Description
 `/data`        | Author mugshot images
 
 Assumed: CI system folder is in `../system3`
+
+### Initialization
+After importing the `quotes-setup.sql` script to your database named "quotes", add two columns to the quotes table as follows:
+
+Column Name | Type
+------------|----------
+vote_total  | int(11)
+vote_count  | int(11)
+
 
 ### Assumptions:
 * Allman-style formatting
